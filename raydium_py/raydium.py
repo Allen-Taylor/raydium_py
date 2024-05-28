@@ -73,7 +73,7 @@ def buy(pair_address: str, amount_in_sol: float):
 
     # Create close account instructions for wSOL account
     print("Creating close account instructions...")
-    close_account_instructions = close_account(CloseAccountParams(TOKEN_PROGRAM_ID, wsol_token_account, payer_keypair.pubkey(), owner=payer_keypair.pubkey()))
+    close_account_instructions = close_account(CloseAccountParams(TOKEN_PROGRAM_ID, wsol_token_account, payer_keypair.pubkey(), payer_keypair.pubkey()))
 
     # Append instructions to the list
     print("Appending instructions...")
