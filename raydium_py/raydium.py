@@ -141,6 +141,7 @@ def sell(pair_address: str, amount_in_lamports: int):
 
     # Initialize instructions list
     instructions = []
+    print("Appending instructions...")
     instructions.append(set_compute_unit_limit(UNIT_BUDGET)) 
     instructions.append(set_compute_unit_price(UNIT_PRICE))
     if wsol_token_account_instructions:
