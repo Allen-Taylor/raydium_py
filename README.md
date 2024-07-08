@@ -4,6 +4,8 @@ This repo is for my python lovers who want to trade on Raydium.
 
 Clone the repo, and add your Public Key (wallet), Private Key and RPC to the config.py.
 
+**If you can - please support my work and donate to: 3pPK76GL5ChVFBHND54UfBMtg36Bsh1mzbQPTbcK89PD**
+
 ### Examples
 
 See the example_buy.py and example_sell.py. 
