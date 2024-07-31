@@ -28,4 +28,4 @@ There is no slippage in this implementation. Tokens out is set to 0 (any amount)
 
 My services are for **hire**. Contact me if you need help integrating the code into your own project. 
 
-Telegram: Allen_A_Taylor (AL THE BOT FATHER)
+Telegram: @AL_THE_BOT_FATHER
