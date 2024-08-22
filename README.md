@@ -2,9 +2,9 @@
 
 This repo is for my python lovers who want to trade on Raydium. 
 
-THIS WASN'T DESIGNED FOR USDC POOLS YOU'LL HAVE TO MODIFY THE CODE YOURSELF.
-
 Clone the repo, and add your Public Key (wallet), Private Key and RPC to the config.py.
+
+THIS WASN'T DESIGNED FOR USDC POOLS YOU'LL HAVE TO MODIFY THE CODE YOURSELF.
 
 **If you can - please support my work and donate to: 3pPK76GL5ChVFBHND54UfBMtg36Bsh1mzbQPTbcK89PD**
 
