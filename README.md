@@ -1,6 +1,8 @@
 # raydium_py
 
-This repo is for my python lovers who want to trade on Raydium.
+This repo is for my python lovers who want to trade on Raydium. 
+
+THIS WASN'T DESIGNED FOR USDC POOLS YOU'LL HAVE TO MODIFY THE CODE YOURSELF.
 
 Clone the repo, and add your Public Key (wallet), Private Key and RPC to the config.py.
 
