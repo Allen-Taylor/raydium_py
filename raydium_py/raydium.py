@@ -265,11 +265,7 @@ def sell(pair_address:str, percentage:int=100, slippage:int=5):
         # Add the swap instructions to the transaction
         txn.add(swap_instructions)
         
-        # Close the Token Account is the entire balance is sold
-        if percentage == 100:
-            close_token_account_instr = close_account(CloseAccountParams(TOKEN_PROGRAM_ID, token_account, payer_keypair.pubkey(), payer_keypair.pubkey()))
-            txn.add(close_token_account_instr)
-            
+        # Close the WSOL Account
         close_wsol_account_instr = close_account(CloseAccountParams(TOKEN_PROGRAM_ID, wsol_token_account, payer_keypair.pubkey(), payer_keypair.pubkey()))
         txn.add(close_wsol_account_instr)        
 
