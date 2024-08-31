@@ -22,7 +22,7 @@ The private key should be in the base58 string format, not bytes.
 
 **Why are my transactions being dropped?** 
 
-You get what you pay for. If you use the public RPC, you're going to get rekt. Spend the money for Helius or Quick Node.
+You get what you pay for. Don't use the main-net RPC, just spend the money for Helius or Quick Node.
 
 **How do I change the fee?** 
 
