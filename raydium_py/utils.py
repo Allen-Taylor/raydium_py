@@ -149,23 +149,14 @@ def confirm_txn(txn_sig: Signature, max_retries: int = 20, retry_interval: int =
     print("Max retries reached. Transaction confirmation failed.")
     return None
 
-def get_pair_address(token_address) -> str:
-    url = f"https://api.dexscreener.com/latest/dex/search?q={token_address}"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0",
-        "Accept": "*/*",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Connection": "keep-alive",
-        "Sec-Fetch-Dest": "empty",
-        "Sec-Fetch-Mode": "cors",
-        "Sec-Fetch-Site": "cross-site"
-    }
-
-    response = requests.get(url, headers=headers)
-    if response.status_code == 200:
-        return response.json()['pairs'][0]['pairAddress']
-    else:
+def get_pair_address(mint):
+    url = f"https://api-v3.raydium.io/pools/info/mint?mint1={mint}&poolType=all&poolSortField=default&sortType=desc&pageSize=1&page=1"
+    try:
+        response = requests.get(url)
+        response.raise_for_status() 
+        return response.json()['data']['data'][0]['id']
+    except requests.exceptions.RequestException as e:
+        print(f"An error occurred: {e}")
         return None
 
 def get_token_price(pool_keys: dict) -> tuple:
