@@ -142,7 +142,7 @@ def buy(pair_address:str, sol_in:float=.01, slippage:int=5) -> bool:
             txn.sign(payer_keypair)
             txn_sig = client.send_transaction(txn, payer_keypair, opts=TxOpts(skip_preflight=True)).value
         
-        # Step 10: Confirm the transaction and return result
+        # Step 10: Confirm the transaction and return the result
         print("Transaction Signature", txn_sig)
         confirmed = confirm_txn(txn_sig)
         return confirmed
@@ -262,7 +262,7 @@ def sell(pair_address:str, percentage:int=100, slippage:int=5):
             txn.sign(payer_keypair)
             txn_sig = client.send_transaction(txn, payer_keypair, opts=TxOpts(skip_preflight=True)).value
         
-        # Step 10: Confirm the transaction and print the result
+        # Step 10: Confirm the transaction and return the result
         print("Transaction Signature", txn_sig)
         confirmed = confirm_txn(txn_sig)
         return confirmed
