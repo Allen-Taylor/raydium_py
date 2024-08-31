@@ -2,7 +2,7 @@
 
 This repo is for my python lovers who want to trade on Raydium. Only works for SOL pairs. 
 
-Clone the repo, and add Private Key and RPC to the config.py.
+Clone the repo, add Private Key (bas58 string) and RPC url to the config.py.
 
 **If you can - please support my work and donate to: 3pPK76GL5ChVFBHND54UfBMtg36Bsh1mzbQPTbcK89PD**
 
