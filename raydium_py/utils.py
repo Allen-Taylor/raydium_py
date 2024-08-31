@@ -149,7 +149,7 @@ def confirm_txn(txn_sig: Signature, max_retries: int = 20, retry_interval: int =
     print("Max retries reached. Transaction confirmation failed.")
     return None
 
-def get_pair_address(mint):
+def get_pair_address(mint: str):
     url = f"https://api-v3.raydium.io/pools/info/mint?mint1={mint}&poolType=all&poolSortField=default&sortType=desc&pageSize=1&page=1"
     try:
         response = requests.get(url)
