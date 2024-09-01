@@ -12,6 +12,8 @@ See the example.py to execute a full Raydium Trade.
 
 ![image](https://github.com/user-attachments/assets/c97031a9-9357-48be-8d26-c164d0970075)
 
+![image](https://github.com/user-attachments/assets/6938a292-3f4d-4c85-99a9-82f05584b2b9)
+
 ### FAQS
 
 **What format should my private key be in?** 
