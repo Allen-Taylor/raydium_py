@@ -151,7 +151,7 @@ def buy(pair_address:str, sol_in:float=.01, slippage:int=5) -> bool:
         print("Error:", e)
         return False
 
-def sell(pair_address:str, percentage:int=100, slippage:int=5):
+def sell(pair_address:str, percentage:int=100, slippage:int=5) -> bool:
     try:
         print(f"Pair Address: {pair_address}")
         if not (1 <= percentage <= 100):
