@@ -6,7 +6,31 @@ Clone the repo, add Private Key (base58 string) and RPC url to the config.py.
 
 **If you can - please support my work and donate to: 3pPK76GL5ChVFBHND54UfBMtg36Bsh1mzbQPTbcK89PD**
 
-### Example
+### Examples
+
+```
+from raydium import buy
+from utils import get_pair_address
+
+# Buy Example
+token_address = "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr" # POPCAT
+pair_address = get_pair_address(token_address)
+sol_in = .1
+slippage = 5
+buy(pair_address, sol_in, slippage)
+```
+
+```
+from raydium import sell
+from utils import get_pair_address
+
+# Sell Example
+token_address = "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr" # POPCAT
+pair_address = get_pair_address(token_address)
+percentage = 100
+slippage = 5
+sell(pair_address, percentage, slippage)
+```
 
 See the example.py to execute a full Raydium Trade.
 
