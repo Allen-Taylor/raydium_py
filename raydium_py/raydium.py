@@ -137,10 +137,10 @@ def buy(pair_address:str, sol_in:float=.01, slippage:int=5) -> bool:
         # Step 9: Sign and send the transaction, handling different signing scenarios
         if wsol_account_keypair:
             txn.sign(payer_keypair, wsol_account_keypair)
-            txn_sig = client.send_transaction(txn, payer_keypair, wsol_account_keypair, opts=TxOpts(skip_preflight=True)).value
+            txn_sig = client.send_transaction(txn, opts=TxOpts(skip_preflight=True)).value
         else:
             txn.sign(payer_keypair)
-            txn_sig = client.send_transaction(txn, payer_keypair, opts=TxOpts(skip_preflight=True)).value
+            txn_sig = client.send_transaction(txn, opts=TxOpts(skip_preflight=True)).value
         
         # Step 10: Confirm the transaction and return the result
         print("Transaction Signature", txn_sig)
@@ -257,10 +257,10 @@ def sell(pair_address:str, percentage:int=100, slippage:int=5) -> bool:
         # Step 9: Sign and send the transaction, handling different signing scenarios
         if wsol_account_keypair:
             txn.sign(payer_keypair, wsol_account_keypair)
-            txn_sig = client.send_transaction(txn, payer_keypair, wsol_account_keypair, opts=TxOpts(skip_preflight=True)).value
+            txn_sig = client.send_transaction(txn, opts=TxOpts(skip_preflight=True)).value
         else:
             txn.sign(payer_keypair)
-            txn_sig = client.send_transaction(txn, payer_keypair, opts=TxOpts(skip_preflight=True)).value
+            txn_sig = client.send_transaction(txn, opts=TxOpts(skip_preflight=True)).value
         
         # Step 10: Confirm the transaction and return the result
         print("Transaction Signature", txn_sig)
