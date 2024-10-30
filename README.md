@@ -2,7 +2,7 @@
 
 Python library to trade on Raydium.
 
-<u>NOTE: THIS ONLY WORKS FOR SOL PAIRS.</u>
+*NOTE: THIS ONLY WORKS FOR SOL PAIRS.*
 
 Updated: 10/30/2024
 
