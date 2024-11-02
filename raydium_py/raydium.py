@@ -102,9 +102,12 @@ def buy(pair_address: str, sol_in: float = .01, slippage: int = 5) -> bool:
         print("Creating swap instructions...")
         swap_instructions = make_swap_instruction(amount_in, minimum_amount_out, wsol_token_account, token_account, pool_keys, payer_keypair)
 
+        print("Preparing to close WSOL account after swap...")
+        close_wsol_account_instr = close_account(CloseAccountParams(TOKEN_PROGRAM_ID, wsol_token_account, payer_keypair.pubkey(), payer_keypair.pubkey()))
+        
         instructions = [
-            set_compute_unit_price(UNIT_PRICE),
             set_compute_unit_limit(UNIT_BUDGET),
+            set_compute_unit_price(UNIT_PRICE),
             create_wsol_account_instr,
             init_wsol_account_instr,
             fund_wsol_account_instr
@@ -114,6 +117,7 @@ def buy(pair_address: str, sol_in: float = .01, slippage: int = 5) -> bool:
             instructions.append(token_account_instr)
         
         instructions.append(swap_instructions)
+        instructions.append(close_wsol_account_instr)
 
         print("Compiling transaction message...")
         compiled_message = MessageV0.try_compile(
@@ -210,8 +214,8 @@ def sell(pair_address: str, percentage: int = 100, slippage: int = 5) -> bool:
         close_wsol_account_instr = close_account(CloseAccountParams(TOKEN_PROGRAM_ID, wsol_token_account, payer_keypair.pubkey(), payer_keypair.pubkey()))
         
         instructions = [
-            set_compute_unit_price(UNIT_PRICE),
             set_compute_unit_limit(UNIT_BUDGET),
+            set_compute_unit_price(UNIT_PRICE),
             create_wsol_account_instr,
             init_wsol_account_instr,
             swap_instructions,
