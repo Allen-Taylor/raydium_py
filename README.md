@@ -2,11 +2,7 @@
 
 Python library to trade on Raydium.
 
-*NOTE 1: THIS ONLY WORKS FOR SOL PAIRS, NOT USDC.*
-
-*NOTE 2: IF YOU ARE USING A FREE TIER RPC, THIS REPO WILL NOT WORK FOR YOU. FREE TIER RPCS DO NOT ALLOW GET_ACCOUNT_INFO_PARSED().*
-
-Updated: 10/30/2024
+Updated: 11/11/2024
 
 Clone the repo, and add your Private Key (Base58 string) and RPC to the config.py.
 
@@ -15,6 +11,8 @@ Clone the repo, and add your Private Key (Base58 string) and RPC to the config.p
 ### Contact
 
 My services are for **hire**. Contact me if you need help integrating the code into your own project. 
+
+I am not your personal tech support. READ THE FAQS.
 
 Telegram: @AL_THE_BOT_FATHER
 
@@ -31,6 +29,13 @@ You get what you pay for. Don't use the main-net RPC, just spend the money for H
 **How do I change the fee?** 
 
 Modify the UNIT_BUDGET and UNIT_PRICE in the config.py. 
+
+**Why is this failing for USDC pairs?** 
+
+This code only works for SOL pairs. 
+
+**Why are there "no pool keys found"?** 
+IF YOU ARE USING A FREE TIER RPC, THIS REPO WILL NOT WORK FOR YOU. FREE TIER RPCS DO NOT ALLOW GET_ACCOUNT_INFO_PARSED().
 
 ### Examples
 
