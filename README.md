@@ -35,6 +35,7 @@ Modify the UNIT_BUDGET and UNIT_PRICE in the config.py.
 This code only works for SOL pairs. 
 
 **Why are there "no pool keys found"?** 
+
 IF YOU ARE USING A FREE TIER RPC, THIS REPO WILL NOT WORK FOR YOU. FREE TIER RPCS DO NOT ALLOW GET_ACCOUNT_INFO_PARSED().
 
 ### Examples
