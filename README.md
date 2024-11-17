@@ -38,6 +38,10 @@ This code only works for SOL pairs.
 
 IF YOU ARE USING A FREE TIER RPC, THIS REPO WILL NOT WORK FOR YOU. FREE TIER RPCS DO NOT ALLOW GET_ACCOUNT_INFO_PARSED().
 
+**Does this code work on devnet?**
+
+No. 
+
 ### Examples
 
 ```
