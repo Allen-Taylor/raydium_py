@@ -2,7 +2,7 @@
 
 Python library to trade on Raydium.
 
-Updated: 11/11/2024
+Updated: 11/29/2024
 
 Clone the repo, and add your Private Key (Base58 string) and RPC to the config.py.
 
