@@ -1,8 +1,8 @@
 # raydium_py
 
-Python library to trade on AMM Raydium pairs. (DOES NOT WORK FOR CLMM)
+Python library to trade on AMM Raydium pairs. (DOES NOT WORK FOR CLMM OR CPMM)
 
-Updated: 12/3/2024
+Updated: 12/8/2024
 
 Clone the repo, and add your Private Key (Base58 string) and RPC to the config.py.
 
