@@ -4,7 +4,7 @@ Python library to trade on AMM Raydium pairs.
 
 **DOES NOT WORK FOR CLMM OR CPMM**
 
-Updated: 12/8/2024
+Updated: 12/13/2024
 
 Clone the repo, and add your Private Key (Base58 string) and RPC to the config.py.
 
@@ -56,8 +56,8 @@ from utils import get_pair_address_from_api, get_pair_address_from_rpc
 
 # Buy Example
 token_address = "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr"  # POPCAT
-sol_in = 0.1
-slippage = 10
+sol_in = .1
+slippage = 1 
 
 # Fetch pair address, fallback to RPC if not found
 pair_address = get_pair_address_from_api(token_address) or get_pair_address_from_rpc(token_address)
@@ -76,7 +76,7 @@ from utils import get_pair_address_from_api, get_pair_address_from_rpc
 # Sell Example
 token_address = "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr"  # POPCAT
 percentage = 100
-slippage = 50
+slippage = 1
 
 # Fetch pair address, fallback to RPC if not found
 pair_address = get_pair_address_from_api(token_address) or get_pair_address_from_rpc(token_address)
