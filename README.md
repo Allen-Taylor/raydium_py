@@ -1,6 +1,6 @@
 # raydium_py
 
-Python library to trade on AMM Raydium pairs. 
+Python library to trade on AMM v4 Raydium Pairs (675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8). 
 
 **DOES NOT WORK FOR CLMM OR CPMM**
 
