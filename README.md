@@ -4,6 +4,10 @@ Python library to trade on AMM v4 Raydium Pairs (675kPX9MHTjS2zt1qfr1NYHuzeLXfQM
 
 **DOES NOT WORK FOR CLMM OR CPMM**
 
+solana Version: 0.35.0
+
+solders Version: 0.21.0
+
 Updated: 12/13/2024
 
 Clone the repo, and add your Private Key (Base58 string) and RPC to the config.py.
